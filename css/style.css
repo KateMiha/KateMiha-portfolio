@@ -1,0 +1,242 @@
+html,body,h1,h2,h3,p{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --grey-color:#404040;
+  --orange-color:#FFAA00;
+  --violet-color:#7B00C7;
+  --amatic: 'Amatic SC', cursive;
+  --open-sans: 'Open Sans Condensed', sans-serif;
+  --oswald: 'Oswald', sans-serif;
+}
+@font-face {
+  font-family: Candara;
+  src: url("css/Candara.otf") format("opentype");
+}
+h1,h2,h3{
+  font-family: var(--amatic);
+  color:white;
+  text-align: center;
+}
+h1{font-size: 2.5em;margin-bottom: 30px;}
+h2{font-size: 1.85em;padding-top: 50px;}
+h3{font-size: 1.45em;}
+p{padding: 20px 40px;}
+a{
+  text-decoration: none;
+  color: black;
+}
+/* Контейнер */
+.box{
+  width: calc(100%-100px);
+  min-width: 900px;
+  height: calc(100vh-60px);
+  min-height: 600px;
+  padding: 30px 50px;
+}
+/* Навигация */
+.nav{
+  position: fixed;
+  z-index: 5;
+  display: grid;
+  grid-auto-rows:1fr;
+  width: 30px;
+  height: 50vh;
+  padding: 0 10px;
+  margin-top: 25vh;
+}
+.link{
+  padding: 20px 0;
+}
+.link > a{
+  padding: 0 5px;
+  color: var(--violet-color);
+  font-family: Candara;
+  background-color: white;
+  margin-left: -2px;
+  border-radius: 50%;
+  border:1px solid var(--violet-color);
+  box-shadow: -2px 2px 1px var(--violet-color);
+}
+.link > a:hover{
+  border-radius: 5px;
+  border:1px solid var(--orange-color);
+  box-shadow: -2px 2px 1px var(--orange-color);
+  transition: .5s;
+  padding: 5px 30px;
+}
+.link > a:not(:hover){
+  transition: 1s;
+}
+.vl {
+  border-left: 4px dotted white;
+  margin-left: 5px;
+}
+/* Главная */
+.home{
+  background: var(--grey-color);
+}
+.titleHome{}
+.img-square{
+  width:160px;
+  height:160px;
+  position:absolute;
+  left:68px;
+  top:66px;
+  transform:rotate(7deg);
+}
+.img-trigon{
+  width:340px;
+  height:340px;
+  position:absolute;
+  left: 0px;
+  top: 255px;
+  transform: rotate(93deg);
+}
+.img-circle{
+  width:315px;
+  height:315px;
+  position:absolute;
+  left:55px;
+  top:145px;
+  border: 3px solid white;
+}
+.card{
+  width:560px;
+  height:360px;
+  background: var(--orange-color);
+  border-radius: 10px;
+  position:absolute;
+  left: 398px;
+  top: 174px;
+  transform: rotate(6deg);
+  box-shadow: 10px 10px 0px -1px  var(--violet-color);
+}
+.nameCard{
+  padding: 25px 10px 0px 10px;
+}
+.nameCard > h1{
+  margin: 10px auto 0 auto;
+  padding: 0;
+}
+.nameCard > hr{
+  border-color:white;
+  background-color:white;
+  width:500px;
+}
+.infoCard{
+  padding: 0 30px 25px 30px;
+  display:grid;
+  grid-template-rows: 7fr 1fr;
+}
+.infoCard > h2{
+  padding: 0;
+  text-align:left;
+}
+.infoCard > h3{
+  padding:0;
+  text-align:right;
+}
+/* Образование */
+.education{
+  background: var(--violet-color);
+}
+.titleEducation{text-shadow: -2px 2px 1px var(--orange-color);}
+.windowEducation{
+  background: white;
+  width: 90%;
+  height: 450px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: -10px 10px 0px -1px  var(--orange-color);
+  font-family: Candara;
+}
+.nameEducation{font-size:1.8em;text-align:center;}
+.infoEducation{font-size:1.5em;}
+.img-sut{width:164px;height:37px;margin: auto 30px 20px auto;float: right;}
+/* Навыки */
+.skills{
+  background: var(--grey-color);
+}
+.titleSkill{
+  text-shadow: -2px 2px 1px var(--violet-color);
+}
+.slide{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(4,1fr);
+  grid-gap: 2vw;
+}
+.skill{
+  font-family: Candara;
+  width: 450px;
+  height: 100px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: -6px 6px 0px -1px  var(--orange-color);
+}
+.skillName{
+  font-size: 1.7em;
+  width: 150px;
+  height: 100px;
+  float: left;
+}
+.skillName > p{
+  padding: 0;
+  text-align: center;
+  margin: 34px 0;
+}
+.skillProgress{
+  width: 300px;
+  height: 100px;
+  float: right;
+
+}
+progress{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width:260px;
+}
+progress::-webkit-progress-bar {
+  height: 20px;
+  background-color: #E5E5E5;
+  border: 0;
+  border-radius: 9px;
+  margin: 40px 0;
+}
+progress::-webkit-progress-value {
+    background-color: var(--violet-color);
+    border: 0;
+    border-radius: 9px;
+    height: 20px;
+    margin: 40px 0;
+}
+/* Практика */
+.practices{
+  background: var(--orange-color);
+}
+.titlePractice{text-shadow: -2px 2px 1px var(--violet-color);}
+.practiceGrid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2vw;
+}
+.practice{
+  height: 450px;
+  background: white;
+  font-family: Candara;
+  font-size: 1.2em;
+  border-radius: 10px;
+  box-shadow: -8px 8px 0px -1px  var(--grey-color);
+}
+.practice > h2{
+  color: black;
+}
+/* Подвал */
+.footer{
+  width: 100%;
+  min-width: 1000px;
+  height: 150px;
+  background: var(--grey-color);
+}
