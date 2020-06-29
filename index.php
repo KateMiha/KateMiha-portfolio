@@ -167,7 +167,7 @@
         <div class="practice">
           <h2>GitHub</h2>
           <ul>
-            <li><a href="https://github.com/KateMiha">https://github.com/KateMiha</a></li>
+            <li><a href="https://github.com/KateMiha/KateMiha-portfolio">https://github.com/KateMiha/KateMiha-portfolio</a></li>
           </ul>
         </div>
       </div>
