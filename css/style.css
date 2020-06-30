@@ -1,9 +1,9 @@
-html,body,h1,h2,h3,p{
+*{
   margin: 0;
   padding: 0;
 }
 :root{
-  --grey-color:#404040;
+  --grey-color:#333;
   --orange-color:#FFAA00;
   --violet-color:#7B00C7;
   --amatic: 'Amatic SC', cursive;
@@ -14,229 +14,515 @@ html,body,h1,h2,h3,p{
   font-family: Candara;
   src: url("css/Candara.otf") format("opentype");
 }
-h1,h2,h3{
-  font-family: var(--amatic);
-  color:white;
-  text-align: center;
-}
-h1{font-size: 2.5em;margin-bottom: 30px;}
-h2{font-size: 1.85em;padding-top: 50px;}
-h3{font-size: 1.45em;}
-p{padding: 20px 40px;}
-a{
-  text-decoration: none;
-  color: black;
-}
-/* Контейнер */
-.box{
-  width: calc(100%-100px);
-  min-width: 900px;
-  height: calc(100vh-60px);
-  min-height: 600px;
-  padding: 30px 50px;
-}
-/* Навигация */
-.nav{
-  position: fixed;
-  z-index: 5;
-  display: grid;
-  grid-auto-rows:1fr;
-  width: 30px;
-  height: 50vh;
-  padding: 0 10px;
-  margin-top: 25vh;
-}
-.link{
-  padding: 20px 0;
-}
-.link > a{
-  padding: 0 5px;
-  color: var(--violet-color);
-  font-family: Candara;
-  background-color: white;
-  margin-left: -2px;
-  border-radius: 50%;
-  border:1px solid var(--violet-color);
-  box-shadow: -2px 2px 1px var(--violet-color);
-}
-.link > a:hover{
-  border-radius: 5px;
-  border:1px solid var(--orange-color);
-  box-shadow: -2px 2px 1px var(--orange-color);
-  transition: .5s;
-  padding: 5px 30px;
-}
-.link > a:not(:hover){
-  transition: 1s;
-}
-.vl {
-  border-left: 4px dotted white;
-  margin-left: 5px;
-}
-/* Главная */
-.home{
-  background: var(--grey-color);
-}
-.titleHome{}
-.img-square{
-  width:160px;
-  height:160px;
-  position:absolute;
-  left:68px;
-  top:66px;
-  transform:rotate(7deg);
-}
-.img-trigon{
-  width:340px;
-  height:340px;
-  position:absolute;
-  left: 0px;
-  top: 255px;
-  transform: rotate(93deg);
-}
-.img-circle{
-  width:315px;
-  height:315px;
-  position:absolute;
-  left:55px;
-  top:145px;
-  border: 3px solid white;
-}
-.card{
-  width:560px;
-  height:360px;
-  background: var(--orange-color);
-  border-radius: 10px;
-  position:absolute;
-  left: 398px;
-  top: 174px;
-  transform: rotate(6deg);
-  box-shadow: 10px 10px 0px -1px  var(--violet-color);
-}
-.nameCard{
-  padding: 25px 10px 0px 10px;
-}
-.nameCard > h1{
-  margin: 10px auto 0 auto;
-  padding: 0;
-}
-.nameCard > hr{
-  border-color:white;
-  background-color:white;
-  width:500px;
-}
-.infoCard{
-  padding: 0 30px 25px 30px;
-  display:grid;
-  grid-template-rows: 7fr 1fr;
-}
-.infoCard > h2{
-  padding: 0;
-  text-align:left;
-}
-.infoCard > h3{
-  padding:0;
-  text-align:right;
-}
-/* Образование */
-.education{
-  background: var(--violet-color);
-}
-.titleEducation{text-shadow: -2px 2px 1px var(--orange-color);}
-.windowEducation{
-  background: white;
-  width: 90%;
-  height: 450px;
-  margin: auto;
-  border-radius: 10px;
-  box-shadow: -10px 10px 0px -1px  var(--orange-color);
-  font-family: Candara;
-}
-.nameEducation{font-size:1.8em;text-align:center;}
-.infoEducation{font-size:1.5em;}
-.img-sut{width:164px;height:37px;margin: auto 30px 20px auto;float: right;}
-/* Навыки */
-.skills{
-  background: var(--grey-color);
-}
-.titleSkill{
-  text-shadow: -2px 2px 1px var(--violet-color);
-}
-.slide{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(4,1fr);
-  grid-gap: 2vw;
-}
-.skill{
-  font-family: Candara;
-  width: 450px;
-  height: 100px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: -6px 6px 0px -1px  var(--orange-color);
-}
-.skillName{
-  font-size: 1.7em;
-  width: 150px;
-  height: 100px;
-  float: left;
-}
-.skillName > p{
-  padding: 0;
-  text-align: center;
-  margin: 34px 0;
-}
-.skillProgress{
-  width: 300px;
-  height: 100px;
-  float: right;
 
-}
-progress{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width:260px;
-}
-progress::-webkit-progress-bar {
-  height: 20px;
-  background-color: #E5E5E5;
-  border: 0;
-  border-radius: 9px;
-  margin: 40px 0;
-}
-progress::-webkit-progress-value {
-    background-color: var(--violet-color);
+@media screen and (min-width: 991px) and (max-width: 2500px) {
+  h1,h2,h3{
+    font-family: var(--amatic);
+    color:white;
+    text-align: center;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  h1{font-size: 2.5em;margin-bottom: 30px;}
+  h2{font-size: 1.85em;}
+  h3{font-size: 1.45em;}
+  p{padding: 20px 40px;}
+  /* Навигация */
+  .nav{
+    width: 15px;
+    position: fixed;
+    z-index: 5;
+    display: grid;
+    grid-auto-rows:1fr;
+    height: 20vh;
+    padding: 0 10px;
+    margin-top: 35vh;
+    font-family: Candara;
+  }
+  .link{
+    height: 15px;
+    margin: 10px 0px;
+    border-radius: 50%;
+  }
+
+  /* Контейнер */
+  .box{  height:calc(100vh - 80px);}
+  .box,.footer{
+    width: calc(100% - 100px);
+    padding: 20px 50px 60px 50px;
+  }
+  /* Главная */
+  .home{
+    background: var(--grey-color);
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+  }
+  .contentHome{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+  }
+  .img-square{
+    z-index: 0;
+    width:150px;
+    height:150px;
+    position: absolute;
+    left:80px;
+    top:80px;
+    transform:rotate(7deg);
+  }
+  .img-trigon{
+    width:300px;
+    height:300px;
+    position: absolute;
+    left:50px;
+    top:200px;
+    transform: rotate(93deg);
+  }
+  .img-circle{
+    position: relative;
+    z-index: 2;
+    width:300px;
+    height:300px;
+    margin-left: 100px;
+    border: 3px solid white;
+  }
+  .card{
+    border-radius: 10px;
+    transform: rotate(6deg);
+    margin: 50px 5px ;
+  }
+  /* .nameCard > hr{
+    text-shadow: 10px 10px 0px -1px  var(--violet-color);
+    border-color:white;
+    background-color:white;
+    width:90%;
+    margin: auto ;
+    margin-bottom: 20px;
+    margin-top: -20px;
+  } */
+  .nameCard > h1{
+    box-shadow: 10px 10px 0px -1px  var(--violet-color);
+    font-size: 2.3em;
+    padding: 0;
+  }
+  .poz{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .infoCard > h2{
+    padding: 0;
+    font-size: 1.8em;
+  }
+  .infoCard > h3{
+    box-shadow: -10px -10px 0px -1px  var(--orange-color);
+    text-align: center;
+    padding: 0;
+    font-size: 1.9em;
+    margin-top: 30px;
+  }
+  /* Образование */
+  .nameEducation{font-size:1.8em;text-align:center;}
+  .infoEducation{font-size:1.5em;}
+  .education{
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    background: var(--violet-color);
+  }
+  .titleEducation{text-shadow: -2px 2px 1px var(--orange-color);}
+  .windowEducation{
+    background: white;
+    border-radius: 10px;
+    box-shadow: -10px 10px 0px -1px  var(--orange-color);
+    font-family: Candara;
+  }
+  .img-sut{width:164px;height:37px;margin: auto 30px 20px 0;float: right;}
+  .img-sut:hover{transform: rotate(4deg) scale(1.1,1.1);;transition: 1s;}
+  .img-sut:not(:hover){transition: 1s;}
+  /* Навыки */
+
+  .skills{
+    background: var(--grey-color);
+  }
+  .titleSkill{
+    text-shadow: -2px 2px 1px var(--violet-color);
+  }
+  .slide{
+    display: grid;
+    padding: 0 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2vw;
+    overflow-y: auto;
+    height: 75vh;
+  }
+  .skill{
+    height: 100px;
+    width: 100%;
+    font-family: Candara;
+    background: white;
+    border-radius: 10px;
+    box-shadow: -6px 6px 0px -1px  var(--orange-color);
+  }
+  .skillName{
+    width: 30%;
+    float: left;
+    font-size: 1.5em;
+    height: 100px;
+  }
+  .skillName > p{
+    margin: 34px 0;
+    padding: 0;
+    text-align: center;
+  }
+  .skillProgress{
+    width: 70%;
+    float: right;
+    height: 100px;
+  }
+  progress{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    border-radius: 9px;
+    width:90%;
+    height: 20px;
+    margin: 40px 0;
+  }
+  progress::-webkit-progress-bar {
+    background-color: #E5E5E5;
     border: 0;
     border-radius: 9px;
     height: 20px;
-    margin: 40px 0;
+  }
+  progress::-webkit-progress-value {
+      background-color: var(--violet-color);
+      border: 0;
+      border-radius: 9px;
+      height: 20px;
+  }
+  progress::-moz-progress-bar {
+    background-color: var(--violet-color);
+    color: #E5E5E5;
+    border: 0;
+    border-radius: 9px;
+    height: 20px;
+  }
+
+  /* Практика */
+  .practices{
+    background: var(--orange-color);
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    background: var(--orange-color);
+  }
+  .titlePractice{text-shadow: -2px 2px 1px var(--violet-color);}
+  .practiceGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2vw;
+  }
+  .practice{
+    padding: 20px 50px;
+    background: white;
+    font-family: Candara;
+    border-radius: 10px;
+    box-shadow: -8px 8px 0px -1px  var(--grey-color);
+    font-size: 1.2em;
+  }
+  .practice > h2{
+    color: black;
+  }
+  /* Подвал */
+  .footer{
+    background: var(--grey-color);
+    height: 150px;
+  }
+  .footer >h3 {padding: 0;margin: 0;}
+  .footer >h2 {padding: 60px 0 0 0;margin: 0;}
 }
-/* Практика */
-.practices{
-  background: var(--orange-color);
+
+@media screen and (min-width: 479px) and (max-width: 991px) {
+  /* стили для больших планшетов - начало */
+  h1,h2,h3{
+    font-family: var(--amatic);
+    color:white;
+    text-align: center;
+  }
+  p{padding: 10px 20px;}
+  a{
+    text-decoration: none;
+    color: black;
+  }
+    h1{font-size: 5em;margin-bottom: 30px;}
+    h2{font-size: 4em;}
+    h3{font-size: 4em;}
+    p{padding: 20px 40px;}
+    /* Навигация */
+    .nav{
+      width: 30px;
+      position: fixed;
+      z-index: 5;
+      display: grid;
+      grid-auto-rows:1fr;
+      height: 20vh;
+      padding: 0 10px;
+      margin-top: 25vh;
+      font-family: Candara;
+    }
+    .link{
+      margin: 10px 0px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    /* Контейнер */
+    .box{  height:calc(100vh - 80px);}
+    .box,.footer{
+      width: calc(100% - 100px);
+      padding: 20px 50px 60px 50px;
+    }
+    /* Главная */
+
+    .home{
+      background: var(--grey-color);
+      display: grid;
+      grid-template-rows: 1fr 8fr;
+    }
+    .contentHome{
+      display: grid;
+      grid-template-rows:  1fr 1fr;
+    }
+    .img-square{
+      z-index: 0;
+      width:20vw;
+      height:20vw;
+      position: absolute;
+      left: 180px;
+      top: 480px;
+      transform:rotate(7deg);
+    }
+    .img-trigon{
+      width:35vw;
+      height:35vw;
+      position: absolute;
+      left: 470px;
+      top: 230px;
+      transform: rotate(45deg);
+    }
+    .img-circle{
+      position: relative;
+      z-index: 2;
+      width:50vw;
+      height:50vw;
+      margin-inline-start: calc((100% - 50vw) / 2);
+      margin-top:50px;
+      border: 3px solid white;
+    }
+    .card{
+      margin-inline-start: calc((100% - 800px) / 2);
+      padding: 20px;
+      border-radius: 10px;
+      transform: rotate(6deg);
+    }
+    .card{
+      border-radius: 10px;
+      transform: rotate(6deg);
+      margin: 50px 5px ;
+    }
+    /* .nameCard > hr{
+      text-shadow: 10px 10px 0px -1px  var(--violet-color);
+      border-color:white;
+      background-color:white;
+      width:90%;
+      margin: auto ;
+      margin-bottom: 20px;
+      margin-top: -20px;
+    } */
+    .nameCard > h1{
+      box-shadow: 10px 10px 0px -1px  var(--violet-color);
+      font-size: 4.5em;
+      padding: 0;
+    }
+    .poz{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .infoCard > h2{
+      padding: 0;
+      font-size: 4em;
+    }
+    .infoCard > h3{
+      text-align: center;
+      box-shadow: -10px -10px 0px -1px  var(--orange-color);
+      padding: 0;
+      font-size: 4em;
+      margin-top: 30px;
+    }
+    /* Образование */
+    .education{
+      display: grid;
+      grid-template-rows: 1fr 8fr;
+      background: var(--violet-color);
+    }
+    .titleEducation{text-shadow: -2px 2px 1px var(--orange-color);}
+    .windowEducation{
+      background: white;
+      border-radius: 10px;
+      box-shadow: -10px 10px 0px -1px  var(--orange-color);
+      font-family: Candara;
+    }
+    .nameEducation{font-size:2.8em;text-align:center;}
+    .infoEducation{font-size:2.5em;}
+    .img-sut{width:164px;height:37px;margin: auto 30px 20px 0;float: right;}
+    .img-sut:hover{transform: rotate(4deg) scale(1.1,1.1);;transition: 1s;}
+    .img-sut:not(:hover){transition: 1s;}
+    /* Навыки */
+
+    .skills{
+      background: var(--grey-color);
+      display: grid;
+      grid-template-rows: 1fr 8fr;
+    }
+    .titleSkill{
+      text-shadow: -2px 2px 1px var(--violet-color);
+    }
+    .slide{
+      display: grid;
+      padding: 0 15px;
+      grid-template-rows: repeat(6,1fr);
+      grid-gap: 3vw;
+      overflow-y: auto;
+    }
+    .skill{
+      width: 100%;
+      height: 150px;
+      font-family: Candara;
+      background: white;
+      border-radius: 10px;
+      box-shadow: -6px 6px 0px -1px  var(--orange-color);
+    }
+    .skillName{
+      width: 30%;
+      float: left;
+      font-size: 2.2em;
+      height: 150px;
+    }
+    .skillName > p{
+      padding: 0;
+      margin: 54px 0;
+      text-align: center;
+    }
+    .skillProgress{
+      width: 70%;
+      float: right;
+      height: 150px;
+    }
+    progress{
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      border: 0;
+      border-radius: 9px;
+      width:90%;
+      height: 25px;
+      margin: 60px 0;
+    }
+    progress::-webkit-progress-bar {
+      background-color: #E5E5E5;
+      border: 0;
+      border-radius: 9px;
+      height: 25px;
+    }
+    progress::-webkit-progress-value {
+        background-color: var(--violet-color);
+        border: 0;
+        border-radius: 9px;
+        height: 25px;
+    }
+    progress::-moz-progress-bar {
+      background-color: var(--violet-color);
+      color: #E5E5E5;
+      border: 0;
+      border-radius: 9px;
+      height: 25px;
+    }
+
+    /* Практика */
+    .practices{
+      display: grid;
+      grid-template-rows: 1fr 8fr;
+      background: var(--orange-color);
+    }
+    .titlePractice{text-shadow: -2px 2px 1px var(--violet-color);}
+    .practiceGrid{
+      display: grid;
+      grid-template-rows: repeat(2,1fr);
+      grid-gap: 2vw;
+    }
+    .practice{
+      font-size: 2.2em;
+      padding: 20px 50px;
+      background: white;
+      font-family: Candara;
+      border-radius: 10px;
+      box-shadow: -8px 8px 0px -1px  var(--grey-color);
+    }
+    .practice > h2{
+      color: black;
+      font-size: 1.5em;
+    }
+    /* Подвал */
+    .footer{
+      background: var(--grey-color);
+      height: 300px;
+    }
+    .footer >h3 {padding: 0;margin: 0;font-size: 2.5em;}
+    .footer >h2 {padding: 60px 0 0 0;margin: 0;font-size: 2.5em;}
+
 }
-.titlePractice{text-shadow: -2px 2px 1px var(--violet-color);}
-.practiceGrid{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 2vw;
+
+@media screen and (max-width: 767px){
+  /* стили для средних планшетов - начало */
+
 }
-.practice{
-  height: 450px;
-  background: white;
-  font-family: Candara;
-  font-size: 1.2em;
-  border-radius: 10px;
-  box-shadow: -8px 8px 0px -1px  var(--grey-color);
+
+@media screen and (min-width: 150px) and (max-width: 479px) {
+
 }
-.practice > h2{
-  color: black;
+
+
+.link{
+  background: #cacaca;
 }
-/* Подвал */
-.footer{
-  width: 100%;
-  min-width: 1000px;
-  height: 150px;
-  background: var(--grey-color);
+.link:hover{
+  background: #e3ff00;
+  transform: scale(1.5,1.5);
+  transition: .2s;
 }
+.link:not(:hover){
+  transition: .5s;
+}
+
+.active{
+    background: #e3ff00;
+    transform: scale(1.5,1.5);
+}
+/*скроллбара */
+::-webkit-scrollbar {
+    width: 4px; /* ширина для вертикального скролла */
+    height: 4px; /* высота для горизонтального скролла */
+    background-color: #E5E5E5;
+}
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: var(--grey-color);
+    border:1px solid  #E5E5E5;
+    border-radius: 2em;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--orange-color);
+}
+/* Стрелки */
+::-webkit-scrollbar-button:vertical:start:decrement {height: 0px;}
+::-webkit-scrollbar-button:vertical:end:increment {height: 0px;}
+::-webkit-scrollbar-button:horizontal:start:decrement {height: 0px;}
+::-webkit-scrollbar-button:horizontal:end:increment {height: 0px;}
