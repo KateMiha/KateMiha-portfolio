@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Портфолио</title>
-
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
     <base target="_blank">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans+Condensed:wght@300&family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js\progressbar.min.js"></script>
   </head>
   <body>
     <div class="nav" id="menu">
@@ -46,19 +47,20 @@
       <h1 class="titleEducation">Образование</h1>
       <div class="windowEducation">
         <p class="nameEducation">Санкт-Петербургский государственный университет телекоммуникаций им. проф. М.А. Бонч-Бруевича</p>
-        <p class="infoEducation">Факультет: Институт непрерывного образования (ИНО)<br>
-          Спец./направл.: 09.03.02 - Информационные системы и технологии<br>
-          Форма обучения: Заочная<br>
-          Квалификация: Бакалавр<br>
-          Профиль: Информационные системы и технологии<br>
-          Год начала обучения: 2017<br>
-          Год окончания обучения: 2022<br><br><br>
-          <a href="https://www.sut.ru/"><img src="img/sut.png" class="img-sut" alt=""></a>
-        </p>
+        <div class="infoEducation">
+          <p>Факультет:</p><p  style="text-align:right;"> Институт непрерывного образования (ИНО)</p>
+          <p>Спец./направл.:</p><p  style="text-align:right;"> 09.03.02 - Информационные системы и технологии</p>
+          <p>Форма обучения:</p><p  style="text-align:right;"> Заочная</p>
+          <p>Квалификация:</p><p  style="text-align:right;"> Бакалавр</p>
+          <p>Профиль:</p><p  style="text-align:right;"> Информационные системы и технологии</p>
+          <p>Год начала обучения:</p><p  style="text-align:right;"> 2017</p>
+          <p>Год окончания обучения:</p><p  style="text-align:right;"> 2022</p>
+        </div>
+        <a href="https://www.sut.ru/"><img src="img/sut.png" class="img-sut" alt=""></a>
       </div>
     </div>
     <div class="skills box" id="skills">
-      <h1 class="titleSkill">Навыки</h1>
+        <h1 class="titleSkill">Навыки</h1>
         <div class="slide slide1">
           <!-- HTML5 -->
           <div class="skill">
@@ -84,7 +86,7 @@
               <p>JS</p>
             </div>
             <div class="skillProgress">
-              <progress value="50" max="100"></progress>
+              <progress value="35" max="100"></progress>
             </div>
           </div>
           <!-- PHP -->
@@ -93,7 +95,7 @@
               <p>PHP</p>
             </div>
             <div class="skillProgress">
-              <progress value="30" max="100"></progress>
+              <progress value="25" max="100"></progress>
             </div>
           </div>
           <!-- SQL -->

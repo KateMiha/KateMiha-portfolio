@@ -14,7 +14,7 @@
   font-family: Candara;
   src: url("css/Candara.otf") format("opentype");
 }
-
+ .practice>ul{margin: 50px 20px;}
 @media screen and (min-width: 991px) and (max-width: 2500px) {
   h1,h2,h3{
     font-family: var(--amatic);
@@ -28,7 +28,7 @@
   h1{font-size: 2.5em;margin-bottom: 30px;}
   h2{font-size: 1.85em;}
   h3{font-size: 1.45em;}
-  p{padding: 20px 40px;}
+  p{padding: 5px 20px;}
   /* Навигация */
   .nav{
     width: 15px;
@@ -37,8 +37,8 @@
     display: grid;
     grid-auto-rows:1fr;
     height: 20vh;
-    padding: 0 10px;
-    margin-top: 35vh;
+    padding: 0 20px;
+    margin-top: 40vh;
     font-family: Candara;
   }
   .link{
@@ -123,8 +123,8 @@
     margin-top: 30px;
   }
   /* Образование */
-  .nameEducation{font-size:1.8em;text-align:center;}
-  .infoEducation{font-size:1.5em;}
+  .nameEducation{font-size:2em;text-align:center;margin: 20px 0;}
+  .infoEducation{font-size:1.6em;display: grid; grid-template-columns: 1fr 2fr;}
   .education{
     display: grid;
     grid-template-rows: 1fr 8fr;
@@ -137,7 +137,12 @@
     box-shadow: -10px 10px 0px -1px  var(--orange-color);
     font-family: Candara;
   }
-  .img-sut{width:164px;height:37px;margin: auto 30px 20px 0;float: right;}
+  .img-sut{
+    width:164px;
+    height:37px;
+    margin: 0 calc((100% - 164px) / 2);
+    margin-bottom: 20px;
+  }
   .img-sut:hover{transform: rotate(4deg) scale(1.1,1.1);;transition: 1s;}
   .img-sut:not(:hover){transition: 1s;}
   /* Навыки */
@@ -249,7 +254,6 @@
     color:white;
     text-align: center;
   }
-  p{padding: 10px 20px;}
   a{
     text-decoration: none;
     color: black;
@@ -257,7 +261,7 @@
     h1{font-size: 5em;margin-bottom: 30px;}
     h2{font-size: 4em;}
     h3{font-size: 4em;}
-    p{padding: 20px 40px;}
+    p{padding: 10px 20px;}
     /* Навигация */
     .nav{
       width: 30px;
@@ -266,8 +270,8 @@
       display: grid;
       grid-auto-rows:1fr;
       height: 20vh;
-      padding: 0 10px;
-      margin-top: 25vh;
+      padding: 0 20px;
+      margin-top: 40vh;
       font-family: Candara;
     }
     .link{
@@ -294,27 +298,27 @@
     }
     .img-square{
       z-index: 0;
-      width:20vw;
-      height:20vw;
+      width:25vw;
+      height:25vw;
       position: absolute;
-      left: 180px;
-      top: 480px;
+      left: 95px;
+      top: 650px;
       transform:rotate(7deg);
     }
     .img-trigon{
-      width:35vw;
-      height:35vw;
+      width:40vw;
+      height:40vw;
       position: absolute;
-      left: 470px;
+      left: 500px;
       top: 230px;
       transform: rotate(45deg);
     }
     .img-circle{
       position: relative;
       z-index: 2;
-      width:50vw;
-      height:50vw;
-      margin-inline-start: calc((100% - 50vw) / 2);
+      width:60vw;
+      height:60vw;
+      margin-inline-start: calc((100% - 60vw) / 2);
       margin-top:50px;
       border: 3px solid white;
     }
@@ -371,9 +375,13 @@
       box-shadow: -10px 10px 0px -1px  var(--orange-color);
       font-family: Candara;
     }
-    .nameEducation{font-size:2.8em;text-align:center;}
-    .infoEducation{font-size:2.5em;}
-    .img-sut{width:164px;height:37px;margin: auto 30px 20px 0;float: right;}
+    .nameEducation{font-size:2.8em;text-align:center;margin: 20px 0;}
+    .infoEducation{font-size:2em;display: grid; grid-template-columns: 2.5fr 3fr;}
+    .img-sut{
+      width:264px;
+      height:60px;
+      margin: 80px calc((100% - 264px) / 2);
+    }
     .img-sut:hover{transform: rotate(4deg) scale(1.1,1.1);;transition: 1s;}
     .img-sut:not(:hover){transition: 1s;}
     /* Навыки */
@@ -488,7 +496,6 @@
 @media screen and (min-width: 150px) and (max-width: 479px) {
 
 }
-
 
 .link{
   background: #cacaca;
